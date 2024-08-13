@@ -12,13 +12,12 @@ public class Program {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		Calculator calc = new Calculator();
 		
 		System.out.print("Enter radius: ");
 		double radius = sc.nextDouble();
 		
-		double c = calc.circunFerence(radius);
-		double v = calc.Volume(radius);
+		double c = Calculator.circunFerence(radius);
+		double v = Calculator.Volume(radius);
 		
 		System.out.printf("Circunference: %.2f%n", c);
 		System.out.printf("Volume: %.2f%n", v);
